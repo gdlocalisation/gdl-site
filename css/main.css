@@ -1,0 +1,137 @@
+@font-face {
+    font-family: Pusab;
+    src: url("/fonts/Pusab.ttf");
+}
+
+@font-face {
+    font-family: ChatFont;
+    src: url("/fonts/Chat.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background: linear-gradient(#0065FB, #002E73);
+}
+
+.logo {
+    width: 55%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.transparent {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 70%;
+    font-family: ChatFont;
+    color: white;
+    font-size: 2vw;
+    margin: auto;
+    padding: 1% 0 0.6% 0;
+    border-radius: 1.8vw;
+}
+
+.buttons {
+    margin-top: 20vh;
+    display: table;
+    border-spacing: 1vw 0;
+}
+
+.button {
+    display: table-cell;
+    position: relative;
+}
+
+.button img {
+    width: 100%;
+}
+
+.button p {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Pusab;
+    font-size: 3vw;
+    -webkit-text-stroke: 0.15vw black;
+    white-space: nowrap;
+
+    background-image: linear-gradient(#fd9f0b, #fee347);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content {
+    margin-top: 3vh;
+    padding: 0.5% 1.5% 1% 1.5%;
+    width: 67%;
+    flex: 1 1 auto;
+    text-align: justify;
+    margin-bottom: 6vh;
+    overflow-y: scroll;
+    border-radius: 1.8vw 0 0 1.8vw;
+    font-size: 1.5em;
+
+    scrollbar-color: #eee rgba(0, 0, 0, 0.2);
+    scrollbar-width: thin;
+}
+
+.content::-webkit-scrollbar {
+    width: 0.9vw;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #eee;
+}
+
+.content h1, .content h2 {
+    text-align: center;
+    font-family: Pusab;
+    -webkit-text-stroke: 0.1vw black;
+    font-size: 2em;
+}
+
+.content h2 {
+    -webkit-text-stroke: 0.08vw black;
+}
+
+.content ul {
+    margin-left: 2vw;
+}
+
+a {
+    color: #81b3ff;
+}
+
+a:visited {
+    color: #81b3ff;
+}
+
+/*
+ * Disable all transitions and animations if the user has reduced motion enabled in their sytem settings
+ * Also disabled on devices that may be slow to render new frames for performance optimization
+ */
+@media screen and
+  (prefers-reduced-motion: reduce), 
+  (update: slow) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
