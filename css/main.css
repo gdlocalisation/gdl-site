@@ -122,6 +122,16 @@ a:visited {
     color: #81b3ff;
 }
 
+.footer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0.2vh;
+    font-family: ChatFont;
+    color: #aaa;
+    font-size: 1.2em;
+}
+
 /*
  * Disable all transitions and animations if the user has reduced motion enabled in their sytem settings
  * Also disabled on devices that may be slow to render new frames for performance optimization
