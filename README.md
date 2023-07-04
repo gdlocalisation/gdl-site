@@ -4,6 +4,6 @@
 
 Geometry Dash Localisation 
 
-Сайт: https://gdlocalisation.netlify.app/ и https://gdlocalisation.gq/
+Сайт: https://gdlocalisation.uk/
 
-Дата истечения срока регистрации домена: 27-02-2023
+Дата истечения срока регистрации домена: 04-07-2024
